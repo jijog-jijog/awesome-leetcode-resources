@@ -5,6 +5,7 @@ public class MonotonicStack {
     public int[] NextGreaterElement(int[] nums) {
         int n = nums.Length;
         int[] result = new int[n];
+        
         Array.Fill(result, -1); // Default to -1 if no greater element exists
         Stack<int> stack = new Stack<int>(); // Stack stores indices
 
